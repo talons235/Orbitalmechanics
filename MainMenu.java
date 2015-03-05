@@ -66,6 +66,7 @@ public class Practice extends JFrame
 			}
 			window.setVisible(false);
 			PlaceHolderBox(ButtonName,Description);
+			window.pack();
 			window.setVisible(true);
 		}
 	};  
@@ -77,7 +78,7 @@ public class Practice extends JFrame
 	
 	public static void createWindow(){
 		window.setTitle("Test1");
-		window.setSize(800,600);
+//		window.setSize(800,600);
 		JFrame.setDefaultLookAndFeelDecorated(true);
 		window.setLayout(new GridLayout(7, 5));
 		window.setDefaultCloseOperation(EXIT_ON_CLOSE);
