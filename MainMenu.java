@@ -1,5 +1,4 @@
 import javax.swing.*;
-
 import java.util.ArrayList;
 import java.awt.*;
 import java.awt.event.*;
@@ -18,18 +17,17 @@ public class Practice extends JFrame
 			"Designer", 
 			"Part Name", 
 			"Invoice", 
-			"CNC Programmer", 
+			"<html><center>CNC <br />Programmer<html>", 
 			"Stock", 
-			"Builder Report", 
-			"Customer Report", 
-			"Due Dates", 
+			"<html><center>Builder <br />Report<html>", 
+			"<html><center>Customer <br />Report<html>", 
+			"<html><center>Due Dates", 
 			"Invoices", 
 			"Hours", 
 			"Time", 
-			"Vacation Schedule",
-			"Employee Records",
+			"<html><center>Vacation <br />Schedule<html>",
+			"<html><center>Employee <br />Records<html>",
 			"New Job"};
-	
 	static String [] purpose = 
 		{
 			"Option of open jobs, closed jobs, or all jobs.",
@@ -66,7 +64,6 @@ public class Practice extends JFrame
 			}
 			window.setVisible(false);
 			PlaceHolderBox(ButtonName,Description);
-			window.pack();
 			window.setVisible(true);
 		}
 	};  
@@ -74,11 +71,11 @@ public class Practice extends JFrame
 	public static void main(String[] args) 
 	{
 		createWindow();
+		
 	}
 	
 	public static void createWindow(){
 		window.setTitle("Test1");
-//		window.setSize(800,600);
 		JFrame.setDefaultLookAndFeelDecorated(true);
 		window.setLayout(new GridLayout(7, 5));
 		window.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -95,6 +92,7 @@ public class Practice extends JFrame
 				Liner("Operations");
 			}
 		}
+		window.pack();
 		window.setVisible(true);
 	}
 	
